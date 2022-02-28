@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Navbar from './components/Navbar';
+import Home from './components/Home/Home';
+import Tabs from './components/Tabs/Tabs';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Navbar/>
+    <Tabs/>
+    <Home/>
     <App />
+
   </React.StrictMode>,
   document.getElementById('root')
 );
