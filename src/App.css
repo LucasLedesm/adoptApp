@@ -1,36 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap");
-.tabss {
-  font-family: "Baloo Tamma 2", cursive;
-  color: white !important;
-}
-
-.tabssbg {
-  background-color: #fcac9a !important;
-}
-
-.card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fcac9a7e;
-}
-
-.card {
-  margin: 10rem;
-  width: 38rem;
-}
-
 .logo {
   font-family: "Chewy", cursive;
-  font-size: xx-large;
-  color: white;
+  font-size: xx-large !important;
+  color: white !important;
 }
 
 .navbar {
