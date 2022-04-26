@@ -13,10 +13,8 @@ const Footer = () => {
             <div className="row my-4">
               <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
 
-                <div className="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style={{ width: "150px", height: "150px;" }}>
-                  <img src="https://mdbootstrap.com/img/Photos/new-templates/animal-shelter/logo.png" height="70" alt=""
-                    loading="lazy" />
-                </div>
+                <div className=" shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style={{ width: "150px", height: "150px;" }}>
+                <iframe src="https://giphy.com/embed/J6VwCNMsCvy8itOXkX" width="100rem" height="100rem" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
                 <p className="text-center">Homless animal shelter The budgetary unit of the Capital City of Warsaw</p>
 
