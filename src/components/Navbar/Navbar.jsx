@@ -1,5 +1,6 @@
 import React from 'react'
 import { Icon } from '@iconify/react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -14,7 +15,7 @@ const Navbar = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarText">
                         <ul className="navbar-nav ulNavItem  me-auto mb-2 mb-lg-0">
-                            <li className="nav-item nav1"> <a className="nav-link" href="#"><Icon icon="ic:baseline-pets" />adopcion </a> </li>
+                            <li className="nav-item nav1"> <Link to={"/adopcion/"} className="nav-link" ><Icon icon="ic:baseline-pets" />adopcion </Link> </li>
                             <li className="nav-item nav2"> <a className="nav-link" href="#"><Icon icon="bx:donate-heart" />Ayudar </a> </li>
                             <li className="nav-item nav3"> <a className="nav-link" href="#"><Icon icon="ic:baseline-event" />Evento </a> </li>
                             <li className="nav-item nav4"> <a className="nav-link" href="#"><Icon icon="bi:person-circle" />Perfil </a> </li>
