@@ -14,7 +14,7 @@ const Rutas = () => {
                     <Route path='/' element={<Home />} />
                     <Route path='/mascotas/' element={<MascotaListContainer />} />
                     <Route path='/mascotas/:id' element={<MascotaDetailContainer />} />
-                    <Route path="/Category/:idCategory" element={<MascotaListContainer />} />
+                    <Route path="/mascotas/:idCategory" element={<MascotaListContainer />} />
                 </Routes>
                 <Footer/>
             </BrowserRouter>

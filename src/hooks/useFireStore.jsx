@@ -11,6 +11,23 @@ const useFireStore = () => {
 
     const [individual, setIndividual] = useState({})
 
+    const [idAdopc, setidAdopc] = useState()
+
+
+    const generateAdopc = async ({datos}) => {
+        setLoad(true)
+
+        try {
+            const col = collection(db, "mascotas");
+            const mascotas = await addDoc(col, datos)
+            setLoad(false)
+            setidAdopc(mascotas.id)
+            
+        } catch (error) {
+            console.log(error);
+            
+        }
+    }
 
 
     const getData = async () => {
@@ -21,6 +38,7 @@ const useFireStore = () => {
             const result = col.docs.map((doc) => doc = { id: doc.id, ...doc.data() })
             setMascotas(result)
             setLoad(false)
+            console.log(result);
         } catch (error) {
             console.log(error);
             setLoad(false)
@@ -57,7 +75,7 @@ const useFireStore = () => {
         
         const resultaux = col.docs.map((doc) => doc = { id: doc.id, ...doc.data() })
         
-        const result = resultaux.filter((item) => item.idCategory===idCategory)
+        const result = resultaux.filter((mascota) => mascota.idCategory===idCategory)
         
         setMascotas(result)
         
@@ -77,9 +95,11 @@ const useFireStore = () => {
         
 
     return {
+        generateAdopc,
         getIndividualData,
         getData,
         getDataCategory,
+        idAdopc,
         mascotas,
         load,
         individual
