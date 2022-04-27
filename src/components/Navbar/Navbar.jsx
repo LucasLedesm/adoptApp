@@ -9,7 +9,7 @@ const Navbar = () => {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
-                    <a className="navbar-brand logo" href="#">Adoptapp!</a>
+                    <Link to={"/"} className="navbar-brand logo" >Adoptapp!</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -22,7 +22,7 @@ const Navbar = () => {
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                     <li><a class="dropdown-item" ><Link to={'/mascotas/'} className="nav-link" ><Icon icon="ic:baseline-pets" />Adoptar </Link></a></li>
                                     <li><hr class="dropdown-divider"></hr></li>
-                                    <li><a class="dropdown-item" ><Link to={"/publicar/"}><Icon icon="ic:baseline-pets" />Dar en adopcion</Link></a></li>
+                                    <li><a class="dropdown-item" ><Link to={"/publicar/"} className="nav-link"><Icon icon="ic:baseline-pets" />Dar en adopcion</Link></a></li>
                                 </ul>
                             </li>
                             <li className="nav-item nav2"> <a className="nav-link" ><Icon icon="bx:donate-heart" />Ayudar </a> </li>
