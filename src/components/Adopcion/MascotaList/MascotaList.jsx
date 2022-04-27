@@ -11,10 +11,13 @@ const MascotaList  = ({ mascotas }) => {
                         <Mascota
                             key={mascota.id}
                             id={mascota.id}
-                            name={mascota.nombre}
-                            description={mascota.descripcion}
+                            color={mascota.color}
+                            enfermedad={mascota.enfermedad}
+                            tamaño={mascota.tamaño}
+                            nombre={mascota.nombre}
+                            descripcion={mascota.descripcion}
                             idCategory={mascota.idCategory}
-                            pictureUrl={mascota.imagen}
+                            fotoUrl={mascota.fotoUrl}
                             edad={mascota.edad}
                             peso={mascota.peso} />)
                     : <p><Loader   /></p>
