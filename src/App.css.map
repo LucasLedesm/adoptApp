@@ -6,7 +6,8 @@
         "_Variables.scss",
         "components/Home/_Home.scss",
         "components/Navbar/_Navbar.scss",
-        "components/Footer/_Footer.scss"
+        "components/Footer/_Footer.scss",
+        "components/Adopcion/Mascota/_Mascota.scss"
     ],
     "names": [],
     "file": "App.css"

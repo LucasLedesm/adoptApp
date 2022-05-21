@@ -17,12 +17,13 @@ const MascotaList  = ({ mascotas }) => {
                             nombre={mascota.nombre}
                             descripcion={mascota.descripcion}
                             idCategory={mascota.idCategory}
-                            fotoUrl={mascota.fotoUrl}
+                            urlFoto={mascota.urlFoto}
                             edad={mascota.edad}
                             peso={mascota.peso} />)
                     : <p><Loader   /></p>
             }
         </>
+
   )
 }
 

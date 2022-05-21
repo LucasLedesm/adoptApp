@@ -16,7 +16,7 @@ const MascotaDetail = ({ mascota }) => {
                         <div className=' col-md-10 d-flex justify-content-start pt-4'>
                         </div>
                         <h1>{mascota.nombre}</h1>
-                        <img src={mascota.fotoUrl} alt="ilustracion" style={{ width: '400px', height: ' 400px' }} />
+                        <img src={mascota.urlFoto} alt="ilustracion" style={{ width: '400px', height: ' 400px' }} />
                         <div className="card-body">
                             <h3>{mascota.precio}</h3>
                             <p style={{ height: '100px' }} className="card-text"><strong>Descripcion:</strong>  {mascota.descripcion}</p>

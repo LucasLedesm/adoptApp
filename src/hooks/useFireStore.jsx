@@ -18,7 +18,7 @@ const useFireStore = () => {
         setLoad(true)
 
         try {
-            const col = collection(db, "mascotas");
+            const col = collection(db, "mascotas"); 
             const mascotas = await addDoc(col, datos)
             setLoad(false)
             setidAdopc(mascotas.id)

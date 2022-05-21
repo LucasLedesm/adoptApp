@@ -8,10 +8,10 @@ const Mascota = (props) => {
     return (
         <>
                     <Link to={`/mascotas/${props.id}`}>
-            <div className="card mb-3" style={{maxWidth: "540px"}}>
+            <div id='cardMascot' className="card mb-3">
                 <div className="row g-0">
-                    <div className="col-md-4">
-                        <img src={props.fotoUrl} className="img-fluid rounded-start" alt="foto Mascota"></img>
+                    <div  id='cardMascot_Cimg' className="col-md-4">
+                        <img id='cardMascot_img' src={props.urlFoto} className="img-fluid rounded-start" alt="foto Mascota"></img>
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
@@ -28,7 +28,7 @@ const Mascota = (props) => {
         //     <div classNameName="col-md-10 w-100">
         //         <div classNameName="card shadow-sm text-white bg-dark border-info align-items-center">
         //             <h1>{props.nombre}</h1>
-        //             <img src={props.fotoUrl} alt="ilustracion" style={{ width: '100px', height: '100px' }} />
+        //             <img src={props.urlFoto} alt="ilustracion" style={{ width: '100px', height: '100px' }} />
         //             <div classNameName="card-body">
         //                 <h3>${props.peso}</h3>
         //                 <h2>${props.edad}</h2>
